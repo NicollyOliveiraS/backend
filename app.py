@@ -70,7 +70,7 @@ def generate_rotina(nome_vestibular, data_vestibular, tempo_disponivel, materias
     # Faz a chamada para o Gemini
     try:
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-3.5-flash",
             contents=conteudo_prompt,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_INSTRUCTION,
@@ -105,7 +105,7 @@ def root():
             "vestibular": "ENEM",
             "data_vestibular": "10/11/2024", 
             "tempo_disponivel": "2 horas por dia de semana e 3 horas fins de semana",
-            "materias": ["Matemática", "Português", "Redação", "Física", "Química"]
+            "materias": ["Matemática", "Português", "Redação", "Física", "Química", "Biologia", "História", "Geografia", "Inglês", "Educação Física", "Artes", "Filosofia", "Sociologia", "Literatura", "obras literárias"]
         }
     }), 200
 
