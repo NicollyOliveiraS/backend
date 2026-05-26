@@ -111,33 +111,6 @@ def root():
 
 
 @app.route("/vestrotina", methods=["POST"])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def vestrotina():
     """Endpoint principal para gerar cronograma de estudos"""
     
@@ -258,16 +231,4 @@ def internal_error(error):
 
 # Executa o servidor
 if __name__ == "__main__":
-    print("=" * 50)
-    print(" Servidor de Cronograma de Estudos v3.0")
-    print("=" * 50)
-    print(" Campos esperados:")
-    print("   - vestibular (obrigatório): Nome do vestibular")
-    print("   - materias (obrigatório): Lista de matérias")
-    print("   - data_vestibular (opcional): Data do vestibular")
-    print("   - tempo_disponivel (opcional): Tempo disponível por dia")
-    print("=" * 50)
-    print(" Endpoint principal: http://localhost:5000/vestrotina")
-    print("=" * 50)
-    
     app.run(debug=True, host="0.0.0.0", port=5000)
