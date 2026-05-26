@@ -111,6 +111,33 @@ def root():
 
 
 @app.route("/vestrotina", methods=["POST"])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def vestrotina():
     """Endpoint principal para gerar cronograma de estudos"""
     
